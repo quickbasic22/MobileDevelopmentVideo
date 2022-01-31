@@ -11,6 +11,7 @@
     </ContentPage.Padding>
 
     <StackLayout BindingContext="{Binding Source={x:Reference slider}}">
+        <BoxView Color="BurlyWood" Opacity="{Binding Value}" />
         <Label Text="{Binding Value}" />
         <Slider x:Name="slider" />
     </StackLayout>
